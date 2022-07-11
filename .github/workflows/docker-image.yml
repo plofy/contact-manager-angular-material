@@ -28,4 +28,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: plofy/contact-manager:$(date +%s)
+        tags: "plofy/contact-manager:$GITHUB_SHA"
